@@ -1,0 +1,179 @@
+<html>
+
+<style>
+  
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+body {
+  background-color: #C4ED6B;
+  font-family: 'Outfit', sans-serif;
+  text-align: center;
+}
+form {
+  background-color: #fff;
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px 20px;
+  line-height: 30px;
+  box-shadow: 1px 6px 20px rgb(0, 0, 0);
+  border-radius: 20px;
+}
+.form-control {
+  text-align: left;
+  margin: 10px;
+}
+.form-control label {
+  display: block;
+  margin-bottom: 5px;
+}
+.form-control input,
+.form-control select,
+.form-control textarea {
+  border: 1px solid #737471;
+  border-radius: 3px;
+  font-family: inherit;
+  padding: 8px;
+  display: block;
+  width: 95%
+}
+.form-control input[type="radio"],
+.form-control input[type="checkbox"] {
+  display: inline-block;
+  width: auto;
+}
+button {
+  background-color: #62C300 ;
+  border: 1px ;
+  border-radius: 3px;
+  font-family: inherit;
+  display: block;
+  font-size: 25px;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+  
+</style>
+
+
+
+
+
+
+  <body>
+  <header class="header"><h1 id="title" class="text-center">Survey Form</h1>
+    <p id="description" class="description text-center">Fill up the form & click submit</p></header>
+  
+      <form id="survey-form">
+ 
+        <div class="form-control">
+            <label for="name" id="name-label">
+                Name
+            </label>
+ 
+            <input type="text"
+                   id="name"
+                   placeholder="Enter your name" 
+                   class="form-group" required/>
+        </div>
+  
+        <div class="form-control">
+            <label for="email" id="email-label">
+                Email
+          </label>
+
+            <input type="email"
+                   id="email"
+                   placeholder="Enter your email" 
+                   class="form-group" required/>
+        </div>
+  
+        <div class="form-control">
+            <label for="age" id="number-label" >Age
+            <input type="number"
+                   id="number"
+                   placeholder="Age"
+                   min="10"
+                   max="99"
+                   class="form-group" required/>
+        </div>
+          <div class="form-control" >
+            <p>Which class do you read in?</P>
+          <select id="dropdown" name="class" class="form-group" required>           <option disabled selected value>Enter class</option>
+            <option value="5th">5th</option>
+            <option value="6th">6th</option>
+            <option value="7th">7th</option>
+            <option value="8th">8th</option>
+            <option value="9th">9th</option>
+            <option value="10th">10th</option>
+            <option value="11th">11th</option>
+            <option value="12th">12th</option>
+            </div>
+          </select>
+      <div class="form-control">
+        <p>Do you play outdoor games?</p>
+            <label>
+            <input
+                   type="radio"
+                   name="outdoor"
+                   value="yes"
+                   class="input-radio"/>
+              Yes</label>
+            <label>
+            <input
+                   type="radio"
+                   name="outdoor"
+                   value="sometimes"
+                   class="input-radio"/>
+              Sometimes</label>
+            <label>
+            <input
+                   type="radio"
+                   name="outdoor"
+                   value="no"
+                   class="input-radio"/>
+              No</label>
+          </div>
+   <div class="form-control">
+     <p>Which outdoor game do you like? 
+       <span class="clue">(check all that apply)</span>
+     </p>
+     <label>
+       <input 
+              type="checkbox"
+              name="games"
+              value="cricket"
+              class="input-checkbox"/>
+       Cricket</label>
+     <label>
+       <input
+              type="checkbox"
+              name="games"
+              value="football"
+              class="input-checkbox"/>
+       Football</label>
+     <label>
+       <input
+              type="checkbox"
+              name="games"
+              value="badminton"
+              class="input-checkbox"/>
+       Badminton</label>
+        </div>
+        <div class="form-control">
+          <p>Any comments or suggestions?</p>
+          <textarea
+                    id="comments"
+                    class="input-textarea"
+                    name="comment"
+                    placeholder="Enter your comment..."></textarea>
+        </div>
+        <div class="form-control">
+          <button 
+                  type="submit"
+                  id="submit"
+                  class="submit-btn">Submit</button>
+        </div>
+  </form>
+  </body>  
+</html>
